@@ -7,13 +7,16 @@ interface Props {
 
 function Education({ education }: Props) {
   return (
-    <div>
-      <div className="font-medium">
-        <Link href={education.school.link} target="_blank">
-          {education.school.label}
-        </Link>
+    <div className="grid grid-cols-12">
+      <div className="col-span-2">{`${education.from} - ${education.to}`}</div>
+      <div className="col-span-10">
+        <div>
+          <Link href={education.school.link} target="_blank">
+            {education.school.label}
+          </Link>
+        </div>
+        <div>{`${education.degree}`}</div>
       </div>
-      <div>{`${education.degree} (${education.from} - ${education.to})`}</div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { profile } from "./const";
 
 function Educations() {
   return (
-    <div>
+    <div className="flex flex-col space-y-4">
       {profile.educations.map((education, i) => {
         return (
           <div key={i}>

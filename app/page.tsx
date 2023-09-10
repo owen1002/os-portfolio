@@ -14,11 +14,13 @@ export default function Page() {
       <div className="w-full">
         <Header />
       </div>
-      <div className="flex flex-col justify-center items-center">
-        <div>
+      <div className="flex flex-col space-y-4 justify-center items-center">
+        <div className="w-full">
           <Experiences />
         </div>
-        <Educations />
+        <div className="w-full">
+          <Educations />
+        </div>
       </div>
     </div>
   );

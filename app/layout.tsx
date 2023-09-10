@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Comic_Neue, Inter } from "@next/font/google";
+import { Comic_Neue } from "next/font/google";
 
 const inter = Comic_Neue({
   weight: "400",
