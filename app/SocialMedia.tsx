@@ -28,7 +28,7 @@ function SocialMedia() {
     <>
       {profile.websites.map((x) => {
         return (
-          <Link href={x.link} key={x.name} target="_blank">
+          <Link href={x.link} key={x.name} target="_blank" title={x.label}>
             <span>
               <FontAwesomeIcon
                 icon={getIcon(x.name)}

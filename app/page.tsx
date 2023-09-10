@@ -5,6 +5,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import Header from "./Header";
 import Experiences from "./Experiences";
 import Educations from "./Educations";
+import Resume from "./Resume";
 
 config.autoAddCss = false;
 
@@ -20,6 +21,9 @@ export default function Page() {
         </div>
         <div className="w-full">
           <Educations />
+        </div>
+        <div className="w-full">
+          <Resume />
         </div>
       </div>
     </div>

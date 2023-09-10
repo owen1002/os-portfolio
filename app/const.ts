@@ -33,9 +33,11 @@ export const experiences: Experience[] = [
       "kdb+ q",
     ],
     duties: [
-      "Designed UI/UX for client account management and swap simulation system",
-      "Built web client and services for client account management and swap simulation system",
-      "Performed reverse engineering on legacy systems",
+      "Designed UI/UX and built web client & service for internal content management system",
+      "Designed UI/UX and built web client & service for internal marginal pricing system",
+      "Built service for automating daily risk cleanup process",
+      "Enhanced existing web client & service for pay-to-hold booking system",
+      "Enhanced existing web client & service for internal dashboard building system",
     ],
   },
   {
@@ -71,9 +73,9 @@ export const experiences: Experience[] = [
       "Docker",
     ],
     duties: [
-      "Developed 13 microservices from scratch for e-commerce platform and merge query/mutation into one endpoint for web client through GraphQL Federation",
-      "Lead a team of 2 engineers to launch CMS cache system built with MongoDB Atlas",
-      "Collaborate with team leads and scrum master to perform an agile development process",
+      "Developed 13 microservices from scratch for e-commerce platform, merge query/mutation into one endpoint for web client through GraphQL Federation",
+      "Lead a team of 2 engineers to launch CMS cache system built with MongoDB Atlas to reduce network/api cost by 80%",
+      "Collaborated with team leads and scrum master to perform the whole agile development process",
     ],
   },
 
@@ -99,7 +101,7 @@ export const experiences: Experience[] = [
     duties: [
       "Developed web client and services from scratch for Internal ERP system",
       "Developed web client and services from scratch for ESG report generation system",
-      "Research and analyze on SEO to boost the ranking of firm's official website",
+      "Researched and analyzed on SEO to boost firm’s official website ranking on google from page 5 to top 10 results",
     ],
   },
   {
@@ -121,7 +123,7 @@ export const profile: Profile = {
   name: "Owen Siu",
   phone: "+852 68434007",
   email: "owensiu1002@gmail.com",
-  description:"A Software Engineer",
+  description: "A Software Engineer",
   websites: [
     {
       name: "github",
