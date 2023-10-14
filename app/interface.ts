@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 
 export interface Profile {
   name: string;
@@ -6,18 +5,18 @@ export interface Profile {
   phone: string;
   description: string;
   websites: PersonalWebsite[];
-  educations: Education[];
-  experiences: Experience[];
+  educations: IEducation[];
+  experiences: IExperience[];
 }
 
-export interface Education {
+export interface IEducation {
   school: StringWithLink;
   degree: string;
   from: string;
   to: string;
 }
 
-export interface Experience {
+export interface IExperience {
   position: string;
   company: StringWithLink;
   from: string;

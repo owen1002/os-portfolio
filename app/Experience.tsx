@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { Experience } from "./interface";
+import { IExperience } from "./interface";
 
 interface Props {
-  experience: Experience;
+  experience: IExperience;
 }
 
 function Experience({ experience }: Props) {

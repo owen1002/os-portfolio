@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { Education } from "./interface";
+import { IEducation } from "./interface";
 
 interface Props {
-  education: Education;
+  education: IEducation;
 }
 
 function Education({ education }: Props) {
