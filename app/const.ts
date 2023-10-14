@@ -1,6 +1,6 @@
-import { Education, Experience, Profile } from "./interface";
+import { IEducation, IExperience, Profile } from "./interface";
 
-export const educations: Education[] = [
+export const educations: IEducation[] = [
   {
     degree: "BEng, Computer  Engineering",
     from: "2012",
@@ -12,7 +12,7 @@ export const educations: Education[] = [
   },
 ];
 
-export const experiences: Experience[] = [
+export const experiences: IExperience[] = [
   {
     company: {
       label: "Morgan Stanley",
