@@ -19,7 +19,7 @@ export const experiences: IExperience[] = [
       link: "https://www.morganstanley.com/",
     },
     position: "Prime Brokerage Tooling Strategist",
-    specialRemark: "Agency Contract from Walters People",
+    specialRemark: "",
     from: "03/2023",
     to: "Now",
     techStack: [

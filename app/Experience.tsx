@@ -16,7 +16,7 @@ function Experience({ experience }: Props) {
               {experience.company.label}
             </Link>
           </div>
-          <div>{experience.specialRemark}</div>
+          {experience.specialRemark && <div>{`(${experience.specialRemark})`}</div>}
         </div>
         <div>{`Position: ${experience.position}`}</div>
         <div>{experience.techStack.join(" / ")}</div>
