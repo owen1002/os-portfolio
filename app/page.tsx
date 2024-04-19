@@ -19,17 +19,17 @@ export default function Page() {
       <div>
         <Introduction />
       </div>
-      <div className="flex flex-col space-y-4 justify-center items-center">
+      {/*<div className="flex flex-col space-y-4 justify-center items-center">
         <div className="w-full">
           <Experiences />
         </div>
         <div className="w-full">
           <Educations />
-        </div>
-        <div className="w-full">
-          <Resume />
-        </div>
+        </div>*/}
+      <div className="w-full">
+        <Resume />
       </div>
+      {/*</div>*/}
     </div>
   );
 }
