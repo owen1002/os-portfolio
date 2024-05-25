@@ -1,8 +1,8 @@
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
-import { Comic_Neue } from "next/font/google";
+import { Space_Mono } from "next/font/google";
 
-const inter = Comic_Neue({
+const inter = Space_Mono({
   weight: "400",
   subsets: ["latin"],
 });
@@ -13,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" >
-      <body className={`${inter.className}`}>
+    <html lang="en">
+      <body className={`${inter.className} h-screen`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
