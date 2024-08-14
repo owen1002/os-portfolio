@@ -16,7 +16,7 @@ export default function Page() {
     <div className="flex h-full items-center justify-center">
       <div
         className={clsx(
-          `flex min-h-96 min-w-[640px] flex-col justify-between`,
+          `flex min-h-96 md:min-w-[640px] mx-8 flex-col justify-between`,
           `border-4 border-dashed border-slate-700 dark:border-slate-200`,
           `p-6`,
         )}
