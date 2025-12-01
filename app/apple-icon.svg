@@ -1,0 +1,7 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="40" fill="#1a1b26"/>
+  <text x="90" y="115" font-family="monospace" font-size="80" font-weight="bold" fill="#7dcfff" text-anchor="middle">OS</text>
+  <circle cx="30" cy="30" r="10" fill="#f7768e" opacity="0.8"/>
+  <circle cx="150" cy="150" r="10" fill="#bb9af7" opacity="0.8"/>
+</svg>
+

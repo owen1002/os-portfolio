@@ -1,0 +1,7 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" rx="8" fill="#1a1b26"/>
+  <text x="16" y="22" font-family="monospace" font-size="16" font-weight="bold" fill="#7dcfff" text-anchor="middle">OS</text>
+  <circle cx="6" cy="6" r="2" fill="#f7768e" opacity="0.8"/>
+  <circle cx="26" cy="26" r="2" fill="#bb9af7" opacity="0.8"/>
+</svg>
+
