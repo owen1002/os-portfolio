@@ -1,4 +1,3 @@
-
 export interface Profile {
   name: string;
   email: string;
@@ -34,3 +33,4 @@ export interface StringWithLink {
   label: string;
   link: string;
 }
+

@@ -2,7 +2,7 @@ import { IEducation, IExperience, Profile } from "./interface";
 
 export const educations: IEducation[] = [
   {
-    degree: "BEng, Computer  Engineering",
+    degree: "BEng, Computer Engineering",
     from: "2012",
     to: "2016",
     school: {
@@ -78,7 +78,6 @@ export const experiences: IExperience[] = [
       "Collaborated with team leads and scrum master to perform the whole agile development process",
     ],
   },
-
   {
     company: {
       label: "AVA Intelligent Partners Limited",
@@ -101,7 +100,7 @@ export const experiences: IExperience[] = [
     duties: [
       "Developed web client and services from scratch for Internal ERP system",
       "Developed web client and services from scratch for ESG report generation system",
-      "Researched and analyzed on SEO to boost firm’s official website ranking on google from page 5 to top 10 results",
+      "Researched and analyzed on SEO to boost firm's official website ranking on google from page 5 to top 10 results",
     ],
   },
   {
@@ -144,3 +143,4 @@ export const profile: Profile = {
   educations,
   experiences,
 };
+
