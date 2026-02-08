@@ -18,7 +18,7 @@ export const experiences: IExperience[] = [
       label: "Morgan Stanley",
       link: "https://www.morganstanley.com/",
     },
-    position: "Prime Brokerage Tooling Strategist",
+    position: "PB Strat",
     specialRemark: "",
     from: "03/2023",
     to: "Now",
