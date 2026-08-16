@@ -37,7 +37,7 @@ export function Hero() {
         {/* Quote strip — a securities-master row, for a person */}
         <dl className="quote-strip opacity-0 animate-fade-in-up delay-300">
           <div className="quote-cell">
-            <dt className="quote-label">Role</dt>
+            <dt className="quote-label">Current Role</dt>
             <dd className="quote-value">
               {current.position} @ {current.company.label}
             </dd>
