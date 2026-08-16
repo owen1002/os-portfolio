@@ -22,7 +22,7 @@ export function Hero() {
         </h1>
         <p className="hero-tagline opacity-0 animate-fade-in-up delay-200">
           Full-stack engineer with {years}+ years shipping web systems for
-          finance — currently building pricing and risk tooling at{" "}
+          finance — working as a {current.position} at{" "}
           <a
             href={current.company.link}
             target="_blank"
@@ -37,7 +37,7 @@ export function Hero() {
         {/* Quote strip — a securities-master row, for a person */}
         <dl className="quote-strip opacity-0 animate-fade-in-up delay-300">
           <div className="quote-cell">
-            <dt className="quote-label">Role</dt>
+            <dt className="quote-label">Current Role</dt>
             <dd className="quote-value">
               {current.position} @ {current.company.label}
             </dd>
