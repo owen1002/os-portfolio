@@ -22,7 +22,7 @@ export function Hero() {
         </h1>
         <p className="hero-tagline opacity-0 animate-fade-in-up delay-200">
           Full-stack engineer with {years}+ years shipping web systems for
-          finance — currently building pricing and risk tooling at{" "}
+          finance — working as a {current.position} at{" "}
           <a
             href={current.company.link}
             target="_blank"
