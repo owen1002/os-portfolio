@@ -1,11 +1,9 @@
 import { Navigation } from "@/components/Navigation";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import {
   Hero,
   About,
   Experience,
   Skills,
-  Education,
   Contact,
 } from "@/components/sections";
 
@@ -17,18 +15,14 @@ export default function Home() {
         Skip to main content
       </a>
 
-      {/* Navigation */}
+      {/* Navigation (includes theme toggle) */}
       <Navigation />
-
-      {/* Theme Toggle */}
-      <ThemeToggle />
 
       <main id="main">
         <Hero />
         <About />
         <Experience />
         <Skills />
-        <Education />
         <Contact />
       </main>
     </>

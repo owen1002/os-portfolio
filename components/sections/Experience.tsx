@@ -3,15 +3,15 @@ import { ExperienceCard } from "@/components/ExperienceCard";
 
 export function Experience() {
   return (
-    <section id="experience" className="section py-24 bg-bg-secondary/30">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="section-title">Experience</h2>
-        <div className="timeline">
-          {profile.experiences.map((experience, index) => (
+    <section id="experience" className="section bg-bg-secondary/40">
+      <div className="section-inner">
+        <span className="section-eyebrow">Experience</span>
+        <h2 className="section-title">Where I&apos;ve worked</h2>
+        <div className="ledger">
+          {profile.experiences.map((experience) => (
             <ExperienceCard
               key={`${experience.company.label}-${experience.from}`}
               experience={experience}
-              index={index}
             />
           ))}
         </div>
@@ -19,4 +19,3 @@ export function Experience() {
     </section>
   );
 }
-

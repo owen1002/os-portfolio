@@ -1,6 +1,12 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  useSyncExternalStore,
+} from "react";
 
 type Theme = "dark" | "light";
 
@@ -20,24 +26,24 @@ export function useTheme() {
   return useContext(ThemeContext);
 }
 
+const emptySubscribe = () => () => {};
+
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("dark");
-  const [mounted, setMounted] = useState(false);
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window === "undefined") return "dark";
+    return (localStorage.getItem("theme") as Theme | null) ?? "dark";
+  });
+  // false during SSR and hydration, true after — without setState in an effect
+  const mounted = useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false
+  );
 
   useEffect(() => {
-    setMounted(true);
-    const stored = localStorage.getItem("theme") as Theme | null;
-    if (stored) {
-      setTheme(stored);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (mounted) {
-      document.documentElement.setAttribute("data-theme", theme);
-      localStorage.setItem("theme", theme);
-    }
-  }, [theme, mounted]);
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));

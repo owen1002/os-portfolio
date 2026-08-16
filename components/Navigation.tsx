@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
-  { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -32,6 +32,9 @@ export function Navigation() {
 
   return (
     <nav className={`nav ${scrolled ? "scrolled" : ""}`} aria-label="Main navigation">
+      <a href="#" className="nav-wordmark" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+        owen<span className="tld">.siu</span>
+      </a>
       <ul className="nav-links">
         {navItems.map((item) => (
           <li key={item.href}>
@@ -44,8 +47,10 @@ export function Navigation() {
             </a>
           </li>
         ))}
+        <li>
+          <ThemeToggle />
+        </li>
       </ul>
     </nav>
   );
 }
-
