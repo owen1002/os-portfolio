@@ -17,7 +17,6 @@ export function getSkillsByCategory() {
   const skillCategories: Record<string, string> = {
     // Frontend
     TypeScript: "Frontend",
-    Typescript: "Frontend",
     JavaScript: "Frontend",
     React: "Frontend",
     Redux: "Frontend",

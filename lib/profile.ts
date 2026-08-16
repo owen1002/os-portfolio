@@ -48,7 +48,7 @@ export const experiences: IExperience[] = [
     position: "Software Engineer",
     from: "10/2021",
     to: "02/2022",
-    techStack: ["Typescript", "React", "Next.js", "MaterialUI", "Docker"],
+    techStack: ["TypeScript", "React", "Next.js", "MaterialUI", "Docker"],
     duties: ["Built web client for client management system"],
   },
   {
@@ -61,7 +61,7 @@ export const experiences: IExperience[] = [
     from: "01/2021",
     to: "09/2021",
     techStack: [
-      "Typescript",
+      "TypeScript",
       "React",
       "Next.js",
       "NestJS",
@@ -87,7 +87,7 @@ export const experiences: IExperience[] = [
     from: "06/2018",
     to: "12/2020",
     techStack: [
-      "Typescript",
+      "TypeScript",
       "React",
       "MaterialUI",
       "Node.js",
@@ -126,12 +126,12 @@ export const profile: Profile = {
   websites: [
     {
       name: "github",
-      label: "Github",
+      label: "GitHub",
       link: "http://github.com/owen1002",
     },
     {
       name: "linkedin",
-      label: "Linkedin",
+      label: "LinkedIn",
       link: "https://www.linkedin.com/in/ming-ngai-owen-siu-a26012133/",
     },
     {
